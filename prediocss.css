@@ -1,0 +1,352 @@
+body{
+    background-color: #e6ffcc;
+}
+
+.teto1{
+    
+    height: 80px;
+    width: 540px;
+    left: 430px;
+    top: -530px;
+    background-color: #003366; 
+    position: relative;
+    border-radius: 8px;
+}
+
+.teto2{
+    
+    height: 50px;
+    width: 300px;
+    left: 552px;
+    top: -640px;
+    background-color: #003366; 
+    position: relative;
+    border-radius: 8px;
+}
+
+.antena1{
+    
+    height: 80px;
+    width: 8px;
+    position: relative;
+    left: 695px;
+    top: -770px;
+    background-color: #003366;
+    
+}
+
+.antena1 .pontaantena1{
+    background-color: red;
+    position: relative;
+    width: 8px;
+    height: 8px;
+    animation-name: pontaantena1;
+  animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* ponta da antena*/
+@keyframes pontaantena1 {
+  from {background-color: red; box-shadow: 0 2px 2px 3px rgba(255, 0, 0, 0.5);}
+  to {background-color: yellow;}
+}
+
+
+.blocopreto{
+    height: 500px;
+    width: 500px;
+    top: 200px;
+    left: 450px;
+    position: relative;
+    background-color: #000000;
+    
+    
+}
+
+
+.bloco1{
+    height: 20px;
+    width: 500px;
+    top: 700px;
+    left: 458px;
+    position: absolute;
+    background-color:  #408000;
+}
+
+.bloco2{
+    height: 20px;
+    width: 500px;
+    top: 207px;
+    left: 458px;
+    position: absolute;
+    background-color:  #408000;
+}
+
+.bloco3{
+    height: 500px;
+    width: 20px;
+    top: 207px;
+    left: 458px;
+    position: absolute;
+    background-color:  #408000;
+}
+
+.bloco4{
+    height: 500px;
+    width: 20px;
+    top: 207px;
+    left: 938px;
+    position: absolute;
+    background-color:  #408000; 
+    
+}
+
+.bloco5{
+    height: 500px;
+    width: 20px;
+    top: 207px;
+    left: 550px;
+    position: absolute;
+    background-color:  #408000; 
+    
+}
+
+
+.bloco6{
+    height: 500px;
+    width: 20px;
+    top: 207px;
+    left: 650px;
+    position: absolute;
+    background-color:  #408000; 
+    
+}
+
+.bloco7{
+    height: 500px;
+    width: 20px;
+    top: 207px;
+    left: 750px;
+    position: absolute;
+    background-color:  #408000; 
+    
+}
+
+.bloco8{
+    height: 500px;
+    width: 20px;
+    top: 207px;
+    left: 850px;
+    position: absolute;
+    background-color:  #408000; 
+    
+}
+
+/*elevador da esquerda*/
+.elevador1{
+    
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 2px 3px rgba(255, 255, 0, 0.5);
+    position: relative;
+    left: 480px;
+    animation-name: elevador;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+}
+
+/*emoji*/
+.elevador1 i{
+    margin-left: 10px;
+   margin-top: 10px;
+    
+   
+    
+}
+
+
+    /*elevador da esquerda sone e desce*/
+    @keyframes elevador{
+    0%   {background-color:#ffff00; top:140px; bottom:0px; }
+  
+    50%  {background-color:#ffff00; top:-280px; bottom:100px;}
+    
+    75%  {background-color: #ffff00; top:0px; bottom:100px;}
+  
+    100% {background-color:#ffff00; top:140px; bottom:0px;}
+    }
+
+/*elevador da esquerda - balao passando mouse*/
+.elevador1 .elevador1text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.elevador1 .elevador1text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.elevador1:hover .elevador1text{
+    visibility: visible;
+    opacity: 1;
+}
+    
+/*elevador da direita*/
+    .elevador2{
+    
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 2px 3px rgba(255, 255, 0, 0.5);
+    position: relative;
+    left: 870px;
+    
+    animation-name: elevador2;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+/*emoji*/
+.elevador2 i{
+    margin-left: 10px;
+   margin-top: 10px;
+   
+   
+    
+}
+
+    /*elevador da direita - sobe e desce*/
+    @keyframes elevador2{
+    0%   {background-color:#ffff00; top:0px; bottom:0px; }
+  
+    50%  {background-color:#ffff00; top:-280px; bottom:300px;}
+  
+    100% {background-color:#ffff00; top:0px; bottom:300px;}
+    }
+
+/*elevador da direita - balao passando mouse*/
+
+.elevador2 .elevador2text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.elevador2 .elevador2text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.elevador2:hover .elevador2text{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+/*elevador da centro*/
+   .elevador3{
+    
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 2px 3px rgba(255, 255, 0, 0.5);
+    position: relative;
+    left: 675px;
+    
+    animation-name: elevador3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* emoji */
+.elevador3 i{
+    margin-left: 10px;
+   margin-top: 10px;
+   
+   
+    
+}
+    
+/*elevador da centro - sobe e desce*/
+    @keyframes elevador3{
+    0%   {background-color:#ffff00; top:0px; bottom:0px; }
+  
+    50%  {background-color:#ffff00; top:-380px; bottom:380px;}
+  
+    100% {background-color:#ffff00; top:0px; bottom:380px;}
+    }
+
+/*elevador da centro - balao passando mouse*/
+.elevador3 .elevador3text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.elevador3 .elevador3text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.elevador3:hover .elevador3text{
+    visibility: visible;
+    opacity: 1;
+}
+
+
